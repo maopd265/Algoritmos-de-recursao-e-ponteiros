@@ -14,7 +14,13 @@ int main ()
  
   setlocale(LC_ALL, "Portuguese");
   printf("Utilizando caracteres e acentuação da língua portuguesa!\n\n");
-
+  float base,expoente;
+  printf("\nDigite dois valores\n");
+  printf("Base:");
+  scanf("%f",&base);
+  printf("\nExpoente:");
+  scanf("%f",&expoente);
+ printf("%.2f\n\n",potencia(base,expoente));
   system("pause");
    
 	
@@ -23,5 +29,15 @@ int main ()
 
 float potencia(float base, float expoente)
 {
-	
+	if(expoente==0)
+	{
+		return 1;
+	}
+	else if(expoente>0)
+	{
+		return base*potencia(base,expoente-1);
+	}else 
+	{
+		return (1/potencia(base,-expoente));
+	}
 }
