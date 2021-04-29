@@ -10,10 +10,7 @@ int main ()
 {
 	
 	
- system("color a");
- 
-  setlocale(LC_ALL, "Portuguese");
-  printf("Utilizando caracteres e acentuação da língua portuguesa!\n\n");
+
   float base,expoente;
   printf("\nDigite dois valores\n");
   printf("Base:");
