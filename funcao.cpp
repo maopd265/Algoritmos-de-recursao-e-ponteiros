@@ -24,10 +24,11 @@ int main()
 {
 	int number1,number2;
     float number3,number4;
+    int vetor[10];
     scanf("%d %d",&number1,&number2);
     scanf("%f %f",&number3,&number4);
     printf("%d %d\n",somaInt(number1,number2),subInt(number1,number2));
     printf("%.1f %.1f\n",somaFloat(number3,number4),subFloat(number3,number4));
-    
+//    printf("%d",sizeof(vetor)/sizeof(vetor[0]));
     return 0;
 }
